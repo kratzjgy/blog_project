@@ -17,7 +17,6 @@
 <style>
         a:link { color: gray; text-decoration: none; }
         a:hover { color: pink; text-decoration: underline; }
-
 </style>
 
 <body>
@@ -40,7 +39,7 @@
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container" style="background-image: url('{% static 'admin/img/earth.jpg' %}')">
             {% block content %}
             {% endblock %}
         </div>

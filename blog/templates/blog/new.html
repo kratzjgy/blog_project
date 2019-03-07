@@ -2,19 +2,34 @@
 
 {% block content %}
 
-    <br>
+<style>
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+	
+</style>
+
+    <br><br><br>
     <div class="container">
-	    <form action="{% url 'create' %}">
-	        <h4>제목: </h4>
-	        <input type="text" name="title">
-	        <br>
-	        <br>
-	        <h4>본문: </h4>
-	        <textarea cols=40 rows=10 name="body"></textarea>
-	        <br>
-	        <br>
-	        <input class="btn btn-dark" type="submit" value="제출하기">
-        </form>
-    </div>
+		<div class="row justify-content-md-center">
+			<div class="col-md-auto">
+	    	<form action="{% url 'create' %}">
+				<h4><div style="color: whitesmoke">제목: </div></h4>
+				<input type="text" name="title">
+				<br>
+				<br>
+				<h4><div style="color: whitesmoke">본문: </div></h4>
+				<textarea cols=40 rows=10 name="body"></textarea>
+				<br>
+				<br>
+				<input class="btn btn-dark" type="submit" value="제출하기">
+			</form>
+			</div>
+		</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br>
 
 {% endblock %}
